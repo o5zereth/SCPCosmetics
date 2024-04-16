@@ -50,7 +50,7 @@ namespace SCPCosmetics.Cosmetics.Glows
 
             Player player = Player.Get(gameObject);
 
-            if (player.Role == RoleTypeId.None || player.Role == RoleTypeId.Spectator || player.CurrentRoom.RoomLightController._flickerDuration > 0f)
+            if (player.Role == RoleTypeId.None || player.Role == RoleTypeId.Spectator)
             {
                 GlowLight.Position = Vector3.one * 6000f;
             } else
